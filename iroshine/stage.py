@@ -76,6 +76,8 @@ class Stage:
 
     # ───────────────────────────────────────────────────── composing ──
     def add(self, *items):
+        """Put things on the stage: views (BarList, GridView, ...), components (CodePanel, Readout, ...),
+        or any plain Manim mobject (titles, shapes). Returns the stage, so calls can be chained."""
         for it in items:
             if isinstance(it, BarList):
                 self.views[it.name] = it

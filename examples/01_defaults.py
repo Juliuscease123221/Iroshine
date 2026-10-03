@@ -31,4 +31,5 @@ stage.add(
 stage.run(Solution().nextGreaterElement, [5, 3, 4, 2, 8], [1, 5, 3, 6, 4, 2, 7, 8])
 
 if __name__ == "__main__":
-    stage.render("01_defaults.mp4")
+    import sys
+    stage.render("01_defaults.mp4", quality=sys.argv[1] if len(sys.argv) > 1 else "high")

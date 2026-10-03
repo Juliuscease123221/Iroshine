@@ -78,4 +78,5 @@ stage.run(Solution().nextGreaterElement,
           [310, 470, 360, 520, 410, 340, 580, 600])
 
 if __name__ == "__main__":
-    stage.render("02_neon.mp4")
+    import sys
+    stage.render("02_neon.mp4", quality=sys.argv[1] if len(sys.argv) > 1 else "high")

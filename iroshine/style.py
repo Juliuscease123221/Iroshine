@@ -120,7 +120,9 @@ class Sound:
     scale: str = "pentatonic"            # pentatonic | major | minor | dorian | lydian | hirajoshi | blues
     key: str = "D"
     octave: int = 4
-    instrument: str = "harp"             # harp | bell | marimba | music_box | soft_sine | wood | wood_soft | log_drum
+    instrument: str = "harp"             # harp | bell | marimba | music_box | soft_sine | tick | wood | wood_soft | log_drum |
+                                         #   water: drip | plop | pour | drop_bell | splash | plish | sploosh |
+                                         #   sploosh_mid | trickle · soft: squish | squish_big
     finale_instrument: str = "bell"
     soft_instrument: str = "soft_sine"   # the quiet notes: pops, recolors, loop returns (try "wood_soft")
     tick_instrument: str = "tick"        # the tiny focus ticks (try "wood_soft")

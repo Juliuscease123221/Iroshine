@@ -1,0 +1,89 @@
+site_name: iroshine
+site_description: Turn LeetCode solutions into beautiful, musical animations.
+site_url: https://juliuscease123221.github.io/Iroshine/
+repo_url: https://github.com/Juliuscease123221/Iroshine
+repo_name: Juliuscease123221/Iroshine
+copyright: Copyright &copy; 2026 Julius Sanchez
+
+theme:
+  name: material
+  font:
+    text: Inter
+    code: IBM Plex Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - search.highlight
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - Install: getting-started/install.md
+      - Your first video: getting-started/first-video.md
+  - Gallery: gallery.md
+  - How-to guides:
+      - how-to/index.md
+      - Show a list as bars: how-to/bars.md
+      - Follow a variable: how-to/variables.md
+      - Animate a grid search: how-to/grids.md
+      - Draw points and paths: how-to/geometry.md
+      - Show the code: how-to/code.md
+      - Choose colours: how-to/color.md
+      - Design the sound: how-to/sound.md
+      - Control pacing and motion: how-to/motion.md
+      - Make a vertical looping Reel: how-to/reels.md
+      - Write your own view: how-to/custom-view.md
+  - Reference:
+      - reference/index.md
+      - Stage: reference/stage.md
+      - Sound, timing, motion, finale: reference/settings.md
+      - Bars: reference/bars.md
+      - Variables: reference/variables.md
+      - Grids and graphs: reference/grids.md
+      - Geometry: reference/geometry.md
+      - Text: reference/text.md
+      - Code and captions: reference/code-and-captions.md
+      - Colour: reference/color.md
+      - Problem views: reference/problem-views.md
+  - How it works: how-it-works.md
+  - Project:
+      - Changelog: changelog.md
+      - Contributing: contributing.md
+      - License: license.md
