@@ -1,0 +1,32 @@
+:root, [data-md-color-scheme="default"] {
+  --md-primary-fg-color: #1a2a6c;
+  --md-primary-fg-color--light: #3a4a8c;
+  --md-primary-fg-color--dark: #121d4d;
+  --md-accent-fg-color: #b21f1f;
+}
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #141b3d;
+  --md-accent-fg-color: #fdbb2d;
+  --md-typeset-a-color: #fdbb2d;
+}
+.md-typeset video {
+  width: 100%;
+  border-radius: 6px;
+  background: #000;
+  display: block;
+}
+.md-typeset video { aspect-ratio: 16 / 9; }
+.md-typeset video.tall, .md-typeset .gallery.tall video { aspect-ratio: 9 / 16; }
+.md-typeset video.tall { width: 17rem; max-width: 100%; margin: 0 auto; }
+.md-typeset .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 1.2rem;
+}
+.md-typeset .gallery .card { margin: 0; }
+.md-typeset .gallery .card h3 { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; }
+.md-typeset .gallery .card p { margin: 0.1rem 0; font-size: 0.7rem; }
+.md-typeset .gallery.tall { grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); }
+.md-typeset table:not([class]) { font-size: 0.68rem; }
+.md-typeset table:not([class]) td:first-child code { white-space: nowrap; }
+.md-typeset table:not([class]) code { word-break: normal; }
