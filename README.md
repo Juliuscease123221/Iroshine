@@ -1,7 +1,5 @@
 # iroshine
 
-*EE-roh-shine* · from Japanese 色 *iro*, "colour": colour-shine.
-
 Turn an algorithm into a beautiful, musical animation. Paste your LeetCode solution unchanged, name
 the variables you want to see, and iroshine works out what to animate from what your code does.
 Built on [Manim](https://www.manim.community/).
